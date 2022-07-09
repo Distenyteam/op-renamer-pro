@@ -31,7 +31,7 @@ async def handle_big_rename(
     editable: Message,
     file_type: str
 ):
-    await editable.edit("𝚂𝙴𝙽𝙳𝙸𝙽𝙶 𝚃𝙾 𝚈𝙾𝚄...")
+    await editable.edit("Senting to you...")
     upload_as_doc = await db.get_upload_as_doc(m.from_user.id)
 
     if (upload_as_doc is False) and (file_type == "video"):
@@ -61,7 +61,7 @@ async def handle_big_rename(
                   if _f_thumb
                   else None)
         if thumbnail_file_id:
-            await editable.edit("𝙵𝙴𝚃𝙲𝙷𝙸𝙽𝙶 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻...")
+            await editable.edit("Fetching Thumnail...")
             thumb_path = await c.download_media(thumbnail_file_id,
                                                 f"{Config.DOWNLOAD_DIR}/{m.from_user.id}/{m.message_id}/")
             if _db_thumb:
