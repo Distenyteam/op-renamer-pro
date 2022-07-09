@@ -9,10 +9,10 @@ from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineK
 from pyrogram.errors import FloodWait
 
 PROGRESS = """
-🚀 **𝚂𝙿𝙴𝙴𝙳 :** `{3}/s`
-⏳ **𝙿𝙴𝚁𝙲𝙴𝙽𝚃𝙰𝙶𝙴 :** `{0}%`
-✅ **𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝙳 :** `{1}`
-💠 **𝚃𝙾𝚃𝙰𝙻 𝚂𝙸𝚉𝙴 :** `{2}`
+🚀 **Speed :** `{3}/s`
+⏳ **Precentage :** `{0}%`
+✅ **Downloarded :** `{1}`
+💠 **Total Size :** `{2}`
 ⏱ **𝙴𝚂𝚃𝙸𝙼𝙰𝚃𝙴𝙳 𝚃𝙸𝙼𝙴 :** `{4}`
 """
 reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text='JOIN', url='https://t.me/NasraiMovieGroup')]])
