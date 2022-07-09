@@ -7,8 +7,8 @@
         "rename",
         "bot"
     ],
-    "repository": "https://github.com/AbirHasan2005/Rename-Bot",
-    "website": "https://abirhasan.wtf",
+    "repository": "https://github.com/Distenyteam/op-renamer-pro",
+    "website": "https://github.com/Distenyteam/op-renamer-pro",
     "success_url": "https://t.me/AH_RenameBot",
     "env": {
         "API_ID": {
