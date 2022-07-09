@@ -95,7 +95,7 @@ class NormalRename:
 
                 if (upload_as_doc is True) or (upload_mode == "document"):
                     media = raw.types.InputMediaUploadedDocument(
-                        mime_type=self.guess_mime_type(dl_file_path) or "application/zip",
+                        mime_type=self.guess_mime_type(dl_file_path) or "mkv/mp4",
                         file=file,
                         thumb=_thumb,
                         attributes=[
@@ -165,7 +165,7 @@ class NormalRename:
                     except FilePartMissing as e:
                         await self.save_file(dl_file_path, file_id=file.id, file_part=e.x)
                     else:
-                        await editable.edit("𝙵𝙸𝙻𝙴 𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈")
+                        await editable.edit("FILE SUPLOARDED SUCCESSFULLY..")
                         await rm_file(dl_file_path)
                         return True, False
             except StopTransmission:
